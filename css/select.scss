@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+} 
+/* selcet */
+$main-color: #E6E6E6;
+$active-back: #ababab;
+$other-back: #303030;
+$easier-reading: #dddddd; 
+$neon: #999999;
+
+div.link-list{
+  background-color: black;
+  width: 98.9vw !important;
+  margin: 0 !important;
+}
+div.link-list > div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  ul.dropdown{ 
+    position: relative; 
+    width: 100%; 
+  }
+  
+  ul.dropdown li{ 
+    font-weight: bold; 
+    display: inline-block;
+    position: relative;
+    background: black;
+    color: $easier-reading;
+    margin-left: 1.5vw;
+    box-sizing: border-box;
+  }
+  ul.dropdown li:hover{
+    background-color: $active-back;
+  }
+  ul.dropdown a:hover{ 
+    color: black; 
+  }
+  
+  ul.dropdown li a { 
+    display: block; 
+    color: $easier-reading; 
+    position: relative; 
+    z-index: 2000; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  
+  ul.dropdown ul{ 
+   display: none;
+   position: absolute; 
+   margin-left: -1.5vw;
+    top: 0; 
+    z-index: 1000;
+  }
+  ul.sub_menu{
+    display: block;
+    z-index: 20000 !important;
+  }
+  ul.dropdown ul li { 
+    font-weight: normal; 
+    background: #f6f6f6;
+    margin-left: 1.5vw !important; 
+    display: block;
+    width: auto;
+    color: #000; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  ul.dropdown ul li a{ 
+    display: block; 
+    color: #34495e !important;
+    background: #eee !important;
+  } 
+  
+  ul.dropdown ul li a:hover{
+    display: block; 
+    background: rgb(131, 129, 140) !important;
+    color: #fff !important;
+  } 
+  
+  .drop > a{
+    position: relative;
+  }
+   
+  .drop > a:after{
+    content:"";
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #333;
+    border-right: 5px solid transparent;
+    z-index: 999;
+  }
+  
+  .drop > a:hover:after{
+    content:"";
+     border-left: 5px solid transparent;
+    border-top: 5px solid #fff;
+    border-right: 5px solid transparent;
+  }
+  
+  div.link-list.second{
+    margin-top: 88vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+
+/* div */
+header, div.link-list.second{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+div#secondLinkList{
+    margin-top: 90vh;
+    padding-bottom: 0.5vw;
+}
+
+
+
+
+
+
+
+
+/* mobile */
+@media (orientation: portrait) {
+    .drop > a:after, .drop > a:hover:after {
+      content: none;
+    }
+}

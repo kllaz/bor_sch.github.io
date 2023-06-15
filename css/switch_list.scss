@@ -1,0 +1,49 @@
+
+/* switch-list */
+$main-color: #E6E6E6;
+$active-back: #ababab;
+$other-back: #303030;
+$easier-reading: #dddddd; 
+$neon: #999999;
+div.link-list{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 98%;
+    line-height: 3vw;
+    font-size: 1.4vw;
+    margin-bottom: 2vw;
+    display: flex;
+    a{
+        padding: 0.3vw 1.5vw 0.3vw 1.5vw;
+    }
+    a:hover{
+        background-color: $active-back;
+        color: black;
+    }
+}
+/* animated */
+div.switch-list a, .animated{
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+/* a */
+a{
+    color: $main-color;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}  
+
+
+/* mobile */
+@media (orientation: portrait) {
+    div.link-list{
+        font-size: 4vw;
+        line-height: 10vw;
+        width: 100vw !important;
+    }
+}
