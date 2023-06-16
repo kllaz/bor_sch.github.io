@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+/* div */
+div.blue{
+    background-color: rgb(131, 129, 140);
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4vw;
+    padding-top: 1vw;
+    border-radius: 2vw 2vw 0 0;
+    div div.flex{
+        margin-top: 3vw;
+    }
+}
+div.flex{
+    display: flex;
+}
+div.black{
+    background-color: rgb(8,8,8);
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    margin-top: -2vw;
+    border-radius: 2vw;
+    position: relative;
+    z-index: 3;
+    >div{
+        padding-top: 3vw !important;
+        width: 90vw;
+        margin-left: 5vw;
+        a{
+            font-size: 1.5vw;
+        }
+    }
+}
+/* table */
+table{
+    tr{
+        td{
+            max-width: 85vw !important;
+            padding: 1vw;
+            border-collapse: collapse !important;
+            border: 1px solid rgb(211, 211, 211);
+            color: rgb(211, 211, 211);
+        }
+    }
+}

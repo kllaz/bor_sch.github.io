@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* div */
+header, div.link-list.second {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+div#secondLinkList {
+  margin-top: 90vh;
+  padding-bottom: 0.5vw;
+}
+
+div.blue {
+  background-color: rgb(131, 129, 140);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 4vw;
+  padding-top: 1vw;
+}
+div.blue div div.flex {
+  margin-top: 3vw;
+}
+
+div.blue.first {
+  border-radius: 2vw 2vw 0 0;
+}
+
+div.blue.last {
+  border-radius: 0 0 2vw 2vw;
+}
+
+div.blue:not(.first) {
+  margin-top: -3vw;
+  padding-top: 4vw;
+}
+
+div.flex {
+  display: flex;
+}
+
+div.black {
+  background-color: rgb(8, 8, 8);
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  margin-top: -2vw;
+  border-radius: 2vw;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(0 1vw 1vw rgb(37, 37, 41));
+}
+div.black > div {
+  padding-top: 3vw !important;
+  width: 90vw;
+}
+div.black > div a {
+  font-size: 1.5vw;
+}
+
+div:where(.blue, .black) > div {
+  margin-left: 5vw;
+  margin-top: 2vw;
+}
+
+div.supervisor img {
+  width: 15vw;
+}
+div.supervisor div {
+  margin-left: 3vw;
+}
+div.supervisor div p {
+  font-size: 2vw;
+}
+
+div.supervisor.left {
+  width: 45vw;
+}
+
+div#reh_testing {
+  font-size: 1.3vw;
+}/*# sourceMappingURL=style.css.map */
