@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    max-width: 100% !important;
+    background-color: black;
+    color: white;
+} 
+/* div */
+header, div.link-list.second{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+div#secondLinkList{
+    margin-top: 90vh;
+    padding-bottom: 0.5vw;
+}
+div.blue{
+    background-color: rgb(131, 129, 140);
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4vw;
+    margin-top: -3vw;
+    padding-top: 5vw;
+    div div.flex{
+        margin-top: 3vw;
+    }
+    >div{
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 2vw;
+        div.hr{
+            background-color: #272727 !important;
+        }
+        ul li{
+            list-style-type: disc;
+        }
+    }
+}
+div.black{
+    background-color: rgb(8,8,8);
+    color: #dddddd;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    margin-top: -2vw;
+    border-radius: 2vw;
+    position: relative;
+    z-index: 3;
+    div.hr{
+        background-color: #dddddd;
+    }
+}
+div:where(.blue, .black) > div{
+    width: 90vw;
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    div.hr{
+        height: 1px;
+        margin: 0;
+        border: 5px;
+    }
+    ul li{
+        list-style-type: disc;
+    }
+    img{
+        width: 40vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* table */
+table{
+    tr td{
+        border-collapse: collapse;
+        border: 1px solid white;
+        padding: 1vw;
+        font-size: 1.3vw;
+    }
+}
