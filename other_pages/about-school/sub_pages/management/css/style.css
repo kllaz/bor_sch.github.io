@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+/* div */
+div.introduction {
+  position: relative;
+  z-index: 2;
+}
+
+div.principal > div {
+  margin-left: 5.5vw;
+}
+
+div.head_teacher > div {
+  margin-left: 5.5vw;
+  padding-top: 5vw;
+}
+
+div.flex {
+  display: flex;
+}
+
+div.black {
+  background-color: rgb(8, 8, 8);
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  margin-top: -2vw;
+  border-radius: 2vw;
+  position: relative;
+  filter: drop-shadow(0 1vw 1vw rgb(37, 37, 41));
+  z-index: 3;
+}
+div.black > div {
+  padding-top: 3vw !important;
+}
+
+div.blue {
+  background-color: rgb(131, 129, 140);
+  position: relative;
+  z-index: 2;
+  margin-top: -5vw;
+  padding-bottom: 4vw;
+}
+div.blue div div.flex {
+  margin-top: 3vw;
+}
+
+div.flex div.second_block {
+  font-size: 1.5vw;
+  margin-left: 5vw;
+}
+div.flex div.second_block p.name {
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+div.last {
+  filter: none;
+}
+
+/* table tr td */
+table, tr, td {
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  padding: 1vw;
+}/*# sourceMappingURL=style.css.map */
