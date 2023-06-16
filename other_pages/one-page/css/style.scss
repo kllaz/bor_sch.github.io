@@ -1,0 +1,68 @@
+$main-color: #E6E6E6;
+$active-back: #ababab;
+$other-back: #303030;
+$easier-reading: #dddddd; 
+$neon: #999999;
+body{
+    color: $main-color;
+    background-color: black;
+    font-style: 'Tahoma Regular';
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* header */
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+/* div */
+div.link-list{
+    margin-bottom: 0 !important;
+}
+div#oneW{
+  height: 60vh;
+}
+div:where(#oneW, #about, #appeals){
+    width: 98.9vw;
+    background-color: white;
+    margin-bottom: 1px;
+    display: none;
+    position: absolute;
+    div a{
+        margin: 0;
+        font-size: 2vw;
+        color: black;
+    }
+    div:not(.flex, .first_block, .second_block, #forStud){
+        margin-left: 1vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    div.second_block{
+        border-left: 1px solid #303030;
+        margin-left: 2vw;
+    }
+    div.second_block:not(.seen){
+      display: none;
+    }
+    p.caption{
+        margin-left: 2vw;
+        color: #303030;
+        width: 75%;
+        padding-bottom: 1vw;
+    }
+}
+div.flex{
+    display: flex;
+}
+
+/* media */
+@media (orientation: portrait) {
+    div:where(#oneW, #about, #appeals){
+    width: 100vw;
+    }
+}

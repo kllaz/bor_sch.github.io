@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>   
+<head> 
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Одно окно</title>
+    <meta name="description" content='Государственное учреждение образования  "Боровлянская средняя школа". 223040 Минский р-н, агрогородок Лесной. Одно окно'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/select.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/intro.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/switch_list.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/general.css" type="text/css" /> 
+    <link rel="icon" href="../../images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" 
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <div class="link-list">
+            <div class="animated">
+                <ul class="dropdown animated">
+                    <li onmouseover="closeSelects()" class="animated"><a href="../../index.html">Главная</a></li>
+                    <li class="drop animated" onmouseover="openOneWindow()" id="oneWB"><a href="#">Одно окно</a>
+                    <li class="drop animated" onmouseover="openAboutWindow()"><a href="../about-school/index.html">Об учреждении</a>
+                    <li class="drop animated" onmouseover="openAppealsWindow()"><a href="#">Обращения</a>
+                    <li onmouseover="closeSelects()" class="animated"><a>Год мира и созидания</a></li>
+                    <li onmouseover="closeSelects()" class="animated"><a>История, традиции, достижения</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- one window -->
+<div id="oneW">
+    <div class="flex">
+        <div class="first_block">
+            <div onmouseover="openStudWind()" id="forStudents"><a href="#">Обучающимся ></a></div>
+            <div onmouseover="openParWind()" id="forParents"><a href="#" >Родителям ></a></div>
+            <div onmouseover="openCitWind()" id="forCitizen"><a href="#">К сведению граждан ></a></div>
+            <div onmouseover="openAdmProcWind()" id="forAdministrativeProcedures"><a href="#">Административные процедуры ></a></div>
+        </div>
+        <div id="forStud" class="second_block">
+                <div><a href="#">Памятка о наркотиках</a></div>
+                <div><a href="#">Каникулы</a></div>
+                <div><a href="#">Организация образовательного процесса</a></div>
+                <div><a href="#">Безопасность</a></div>
+                <div><a href="#">Библиотека</a></div>
+                <div><a href="#">Профориентация</a></div>
+                <div><a href="#">Профильное обучения</a></div>
+                <div><a href="#">Перечень экзаменов</a></div>
+                <div><a href="#">Сельский дом культуры</a></div>
+                <div><a href="#">Здоровый образ жизни</a></div>
+                <div><a href="#">Уголок правовых знаний</a></div>
+                <div><a href="#">Изменения в КОАП</a></div>
+                <div><a href="#">Приём документов в 10 класс</a></div>
+                <div><a href="#">Лагерь труда и отдыха Радуга</a></div>
+        </div>
+        <div id="forPar" class="second_block">
+                <div><a href="#">Об образовании</a></div>
+                <div><a href="#">Родительский комитет</a></div>
+                <div><a href="#">Попечительский совет</a></div>
+                <div><a href="#">Школьная форма</a></div>
+                <div><a href="#">Безопасность и профилактика</a></div>
+                <div><a href="#">Комиссия по противодействию коррупции</a></div>
+                <div><a href="#">Воспитательная работа</a></div>
+                <div><a href="#">Телефон доверия</a></div>
+                <div><a href="#">Инклюзивная культура</a></div>
+                <div><a href="#">Организация питания</a></div>
+        </div>
+        <div id="forCit" class="second_block">
+            <div><a href="#">Минский районный исполнительный комитет</a></div>
+            <div><a href="#">Главное управление по образованию</a></div>
+            <div><a href="#">Управление по образованию</a></div>
+        </div>
+        <div id="forAdmProc" class="second_block">
+            <div><a href="#">Образование</a></div>
+            <div><a href="#">Труд и социальная защита</a></div>
+            <div><a href="#">Жилищные правоотношения</a></div>
+        </div>
+    </div>
+    <p class="caption">Если вы хотите вернуться на главное окно этой страницы, наведите курсор на вкладки "Главная", "Год мира и созидания"
+        или "История, традиции, достижения", но не нажимайте на них</p>
+</div>
+<!-- about school -->
+<div id="about">
+    <div class="flex">
+        <div class="first_block">
+            <div onmouseover="openManageWindow()"><a href="../about-school/sub_pages/management/index.html">Руководство ></a></div>
+            <div onmouseover="openTeachersRoom()"><a href="../about-school/sub_pages/tch_room/index.html">Учительская ></a></div>
+            <div onmouseover="openElemenatrySchoolWindow()"><a href="../about-school/sub_pages/prim_sch/index.html">Начальная школа ></a></div>
+            <div onmouseover="openProjectActWindow()"><a href="../about-school/sub_pages/project_activity/amplua/index.html">Проектная деятельность ></a></div>
+            <div onmouseover="openSixthDayWindow()"><a href="../about-school/sub_pages/sixth_day/index.html">6 школьный день ></a></div>
+            <div onmouseover="openPhotogaleryWindow()"><a href="../about-school/sub_pages/photogalery/index.html">Фотогалерея ></a></div>
+        </div>
+        <div id="tchRoom" class="second_block">
+            <div><a href="../about-school/sub_pages/tch_room/sub_pages/ped_council/index.html">Педагогические советы</a></div>
+            <div><a href="../about-school/sub_pages/tch_room/index.html#reh_testing">Репетиционное тестирование</a></div>
+            <div><a href="../about-school/sub_pages/tch_room/sub_pages/informatization/index.html">Информатизация</a></div>
+            <div><a href="../about-school/sub_pages/tch_room/sub_pages/organizations/index.html">Организации</a></div>
+            <div><a href="../about-school/sub_pages/tch_room/sub_pages/meth_bank/index.html">Методическая копилка</a></div>
+        </div>
+        <div id="elementarySch" class="second_block">
+            <div><a href="../about-school/sub_pages/prim_sch/sub_pages/camp/index.html">Лагерь</a></div>
+            <div><a href="../about-school/sub_pages/prim_sch/sub_pages/research_act/index.html">Исследовательская деятельность</a></div>
+            <div><a href="../about-school/sub_pages/prim_sch/sub_pages/competitions/index.html">Конкурсы и олимпиады</a></div>
+            <div><a href="../about-school/sub_pages/prim_sch/sub_pages/continuity/index.html">Преемственность образовании</a></div>
+            <div><a href="../about-school/sub_pages/prim_sch/sub_pages/publication/index.html">Публикации</a></div>
+        </div>
+        <div id="projectAct" class="second_block">
+            <div><a href="../about-school/sub_pages/project_activity/amplua/index.html">Студия "Амплуа"</a></div>
+            <div><a href="../about-school/sub_pages/project_activity/humanitarian/my_tmrrw/index.html">Моё завтра</a></div>
+            <div><a href="../about-school/sub_pages/project_activity/humanitarian/parallel/index.html">Параллельный мир</a></div>
+            <div><a href="../about-school/sub_pages/project_activity/eco-gen/index.html">"ЭКО-поколение"</a></div>
+        </div>
+    </div>
+    <p class="caption">Если вы хотите вернуться на главное окно этой страницы, наведите курсор на вкладки "Главная", "Год мира и созидания"
+    или "История, традиции, достижения", но не нажимайте на них</p>
+</div>
+<!-- appeals -->
+<div id="appeals">
+    <div class="flex">
+        <div class="first_block">
+            <div onmouseover="closeSampStatWindow()"><a href="#">Благодарности ></a></div>
+            <div onmouseover="closeSampStatWindow()"><a href="#">Часто задаваемые вопросы ></a></div>
+            <div onmouseover="closeSampStatWindow()"><a href="#">График телефонных "прямых линий" ></a></div>
+            <div onmouseover="openSampStatWindow()"><a href="#">Образцы заявлений ></a></div>
+        </div>
+        <div id="sampStat" class="second_block">
+                <div><a href="#">Директор школы</a></div>
+                <div><a href="#">Заместители директора по учебной работе</a></div>
+                <div><a href="#">Заместители директора по воспитательной работе</a></div>
+        </div>
+    </div>
+    <p class="caption">Если вы хотите вернуться на главное окно этой страницы, наведите курсор на вкладки "Главная", "Год мира и созидания"
+    или "История, традиции, достижения", но не нажимайте на них</p>
+</div>
+<div class="introduction">
+    <p>«Одно окно»</p>
+    <p class="caption">Сайт, на котором расположены ссылки на практически <b>все</b> окна</p>
+    <p class="under_caption">Для этого наведите курсор мыши на блоки, расположенные в шапке данной страницы</p>
+    <p class="info"><u>Уважаемые посетители!</u> Обращаем внимание на то, что 2 января 2023 г. вступают в силу изменения, внесенные в статью 25 
+        Закона Республики Беларусь «Об обращениях гражедан и юридических лиц». В связи с этим подача электронных обращений будет возможна только 
+        с помощью государственной единой (интегрированной) республиканской информационной системы учета и обработки обращений граждан и 
+        юридических лиц - интернет-ресурса обращения.бел.</p>
+</div>
+<script src="js/select.js"></script>
+</body>
+</html>
